@@ -177,14 +177,14 @@ class ApplianceTest extends TestCase
 
     public function test_it_validates_updating_appliance_when_not_found(): void
     {
-        Brand::factory()->createOne();
+        $brand = Brand::factory()->createOne();
 
-        $nonExistentId = 4;
+        $nonExistentId = 404; // just for fun, this could be any number
 
         $data['name'] = 'Updated Appliance';
         $data['description'] = 'Updated description lorem ipsum';
         $data['voltage'] = '220V';
-        $data['brand_id'] = 1;
+        $data['brand_id'] = $brand->id;
 
         $response = $this->putJson('/api/appliances/' . $nonExistentId, $data);
         
