@@ -15,3 +15,9 @@ docker run --rm \
 ```
 3. then `./vendor/bin/sail up -d`
 4. and for last `./vendor/bin/sail artisan migrate`
+
+## Testing
+For testing just run:
+```cmd
+./vendor/bin/sail artisan test
+```
