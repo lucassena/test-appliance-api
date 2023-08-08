@@ -4,9 +4,7 @@ namespace Tests\Feature\API;
 
 use App\Models\Appliance;
 use App\Models\Brand;
-use App\Domain\Enums\ApplianceVoltage;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Testing\Fluent\AssertableJson;
 use Tests\TestCase;
 
