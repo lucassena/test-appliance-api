@@ -17,7 +17,7 @@ docker run --rm \
 4. and for last `./vendor/bin/sail artisan migrate --seed`
 
 ## Testing
-For testing just run:
+For execute tests just run:
 ```cmd
 ./vendor/bin/sail artisan test
 ```
